@@ -1,21 +1,19 @@
 # OS
 BJTU CIT OS class
 
-ʵ��� �߳�ͬ��
+实验二 线程同步
 
-1.1 ʵ����
+本实验讨论临界区问题及其解决方案。实验首先创建两个共享数据资源的并发线程。在没有同步控制机制的情况下，
+我们将看到某些异常现象。针对观察到的现象，本实验采用两套解决方案：
 
-��ʵ�������ٽ������⼰����������ʵ�����ȴ�����������������Դ�Ĳ����̡߳���û��ͬ�����ƻ��Ƶ�����£�
-���ǽ�����ĳЩ�쳣������Թ۲쵽�����󣬱�ʵ��������׽��������
+利用Windows的mutex机制
 
-����Windows��mutex����
+采用软件方案
 
-������������
-
-Ȼ��Ƚ������ַ������������ӡ�
+然后比较这两种方案的性能优劣。
 
 
-ʵ���� UNIX Shell with History Feature
+实验三 UNIX Shell with History Feature
 
 Goal
 
@@ -23,17 +21,17 @@ The goal of this project is (1) to obtain a good understanding of operating syst
 and system calls, (2) to practice creating process and coordinate the running of parent
 and child processes.
 
-ʵ���� ҳ���滻�㷨
+实验三 页面替换算法
 
-3.1 ʵ����
+3.1 实验简介
 
-��ʵ��Ҫ��ʵ�ֶ���ҳ���滻�㷨��Ȼ������������������ô����������ܡ�
+本实验要求实现多种页面替换算法，然后利用随机产生的引用串测试其性能。
 
 
-ʵ���� �ļ�ϵͳ
+实验四 文件系统
 
-4.1ʵ����
+4.1实验简介
 
-��ʵ��Ҫ���ڼ����I/Oϵͳ֮�Ͽ���һ���򵥵��ļ�ϵͳ��������������ʵ���߶��ļ�ϵͳ�������˽⣬�ֱ������漰����ϸ�ڡ�
-�û�ͨ��create��open��read���������ļ�ϵͳ�������ļ�ϵͳ�Ѵ�����Ϊ˳���ŵ��߼������У��߼���ı��Ϊ0��L-1��
-I/Oϵͳ�����ڴ��е�����ģ����̡�
+本实验要求在假设的I/O系统之上开发一个简单的文件系统，这样做既能让实验者对文件系统有整体了解，又避免了涉及过多细节。
+用户通过create、open、read等命令与文件系统交互。文件系统把磁盘视为顺序编号的逻辑块序列，逻辑块的编号为0至L-1。
+I/O系统利用内存中的数组模拟磁盘。
